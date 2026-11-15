@@ -929,6 +929,6 @@ def write(name, text):
 
 
 if __name__ == "__main__":
-    write("index.html", home())
-    for i, p in enumerate(PRODUCTS):
-        write(p["slug"] + ".html", product_page(i, p))
+    # The pages are now built by build_site.py (the 3D redesign); this file supplies the product data and demo blocks.
+    import runpy
+    runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), "build_site.py"), run_name="__main__")
