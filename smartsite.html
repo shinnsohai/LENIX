@@ -12,17 +12,19 @@ document.documentElement.setAttribute('data-theme',t);})();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;800&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700;800&family=Red+Hat+Mono:wght@500&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/showcase.css">
+<link rel="stylesheet" href="assets/refine.css">
+<script type="speculationrules">{"prefetch":[{"where":{"href_matches":"/*.html"},"eagerness":"moderate"}]}</script>
 </head>
 <body style="--c:var(--orange)">
 <div class="progress" aria-hidden="true"></div>
 <header class="topbar" id="topbar">
   <div class="wrap bar">
     <a class="tb-logo" href="index.html" aria-label="LENIX home">
-      <img class="on-dark" src="assets/logo-on-dark.png" alt="LENIX" width="628" height="220">
-      <img class="on-light" src="assets/logo-on-light.png" alt="LENIX" width="655" height="220">
+      <img decoding="async" class="on-dark" src="assets/logo-on-dark.png" alt="LENIX" width="628" height="220">
+      <img decoding="async" class="on-light" src="assets/logo-on-light.png" alt="LENIX" width="655" height="220">
     </a>
     <nav class="tb-links" aria-label="Primary"><a href="builtsync.html">BuiltSync</a><a href="ezjob.html">EZJOB</a><a href="courseatlas.html">Course Atlas</a><a href="smartsite.html" aria-current="page">Smart Site</a><a href="index.html#services">Services</a><a href="index.html#contact">Contact</a></nav>
     <div class="tb-actions">
@@ -52,7 +54,7 @@ document.documentElement.setAttribute('data-theme',t);})();
     <div><div class="scene-count" aria-hidden="true"></div><div class="scene-bar" aria-hidden="true"><i></i></div>
       <ol class="scene-steps"><li data-img="0"><h3>One site, six controls</h3><p>Handhelds and fixed readers cover the gate, vehicles, toolbox meetings, the store, controlled rooms and every floor.</p></li><li data-img="1"><h3>Worker gate</h3><p>The guard sweeps the queue. Each worker&#x27;s photo, company, pass and induction status appear on screen. Green: entry logged. Red: stop.</p><span class="stat">Read range up to 15 m, as stated by the reader vendor</span></li><li data-img="2"><h3>Vehicle lane</h3><p>The guard scans the windscreen tag and the vehicle is checked against the register. Unknown vehicles raise an alert.</p><span class="stat">Log book: about 60 s per vehicle. Stated RFID check: 2 s.</span></li><li data-img="3"><h3>Toolbox meeting</h3><p>The supervisor sweeps the crew&#x27;s helmets. The roster is checked and the absentee list appears at once.</p><span class="stat">One sweep reads the whole crew</span></li><li data-img="4"><h3>Store and materials</h3><p>Pick an item and sweep the store to find its tag. Withdrawals scan the worker&#x27;s helmet, then the items.</p><span class="stat">Every withdrawal is tied to a named worker</span></li><li data-img="-1"><h3>Controlled rooms</h3><p>A reader at the room, zone or hoist lets only trained, authorised workers pass. Refusals are logged for audits.</p><span class="stat">Log book: about 30 s per person. Stated RFID check: 2 s.</span></li><li data-img="5"><h3>Floors and mustering</h3><p>Readers at stair cores and hoists keep a live count per floor. At the assembly point, a handheld sweep lists who is missing.</p><span class="stat">Shows the last checkpoint passed, not a live position</span></li></ol></div>
     <div class="stage"><svg class="plan aerial" viewBox="0 0 1448 1086" role="img" aria-label="Aerial view of a construction site with RFID reader positions marked: a worker gate on the left hoarding, a vehicle gate at the bottom, a toolbox meeting area, the building with a controlled room and two stair-core readers, a store, and a muster point">
-  <image href="assets/site-aerial.jpg" width="1448" height="1086" preserveAspectRatio="xMidYMid slice"/>
+  <image href="assets/site-aerial.webp" width="1448" height="1086" preserveAspectRatio="xMidYMid slice"/>
   <rect class="scrim" width="1448" height="1086"/>
   <g class="m m1">
     <rect class="pl" x="136" y="546" width="26" height="60" rx="5"/><circle class="ping" cx="149" cy="576" r="64"/>
@@ -82,7 +84,7 @@ document.documentElement.setAttribute('data-theme',t);})();
     <rect class="pl" x="1144" y="924" width="164" height="82" rx="6"/><circle class="ping" cx="1226" cy="965" r="76"/>
     <path class="lead" d="M1226 924v-14"/><g class="tag"><rect x="1199" y="880" width="54" height="30" rx="15"/><text x="1226" y="901" text-anchor="middle">M4</text></g><text x="1190" y="902" text-anchor="end">Store</text>
   </g>
-</svg><img class="inset on" src="assets/smartsite/helmet-tag.jpg" alt="" loading="lazy"><img class="inset" src="assets/smartsite/m1-gate.jpg" alt="" loading="lazy"><img class="inset" src="assets/smartsite/m2-vehicle.jpg" alt="" loading="lazy"><img class="inset" src="assets/smartsite/m3-toolbox.jpg" alt="" loading="lazy"><img class="inset" src="assets/smartsite/m4-store.jpg" alt="" loading="lazy"><img class="inset" src="assets/smartsite/m6-muster.jpg" alt="" loading="lazy"></div>
+</svg><img decoding="async" class="inset on" src="assets/smartsite/helmet-tag.webp" alt="" loading="lazy"><img decoding="async" class="inset" src="assets/smartsite/m1-gate.webp" alt="" loading="lazy"><img decoding="async" class="inset" src="assets/smartsite/m2-vehicle.webp" alt="" loading="lazy"><img decoding="async" class="inset" src="assets/smartsite/m3-toolbox.webp" alt="" loading="lazy"><img decoding="async" class="inset" src="assets/smartsite/m4-store.webp" alt="" loading="lazy"><img decoding="async" class="inset" src="assets/smartsite/m6-muster.webp" alt="" loading="lazy"></div>
   </div></div>
 </section>
 
@@ -100,12 +102,12 @@ document.documentElement.setAttribute('data-theme',t);})();
     <section class="sec" id="what">
       <h2>What Smart Site is, and the problem it is for</h2>
       <div class="prose"><p>During construction, before permanent turnstiles exist, a large site is controlled by people writing in books. Guards log every entry by hand. Vehicles are checked by eye. Toolbox meetings are counted by head. Store withdrawals go on slips. In an emergency, the roll call is a paper list.</p><p>One cause sits behind all of it: identity and presence are written down by people, not captured by a system. Smart Site replaces that with one rule: <strong>one person, one ID, one tag</strong>. Each worker is enrolled once, with photo, company, trade, work pass, safety course and induction, and carries a combined QR and UHF sticker on their helmet. The tag itself holds a random ID and no personal data.</p><p>Handheld readers do most of the work, because gates and floors move during construction. Handhelds need no civil work and are useful from day one. Fixed readers are added later at chokepoints such as stair cores and hoists, and every read flows to one platform that checks it against the register and the rules.</p></div>
-      <figure class="figure"><span class="shot wipe"><img src="assets/smartsite/gate-logbook.jpg" alt="Workers queue at a site gate while a guard writes each entry in a log book" loading="lazy"></span><figcaption>The gate today: every entry is written into a book by hand.</figcaption></figure>
+      <figure class="figure"><span class="shot wipe"><img decoding="async" src="assets/smartsite/gate-logbook.webp" alt="Workers queue at a site gate while a guard writes each entry in a log book" loading="lazy"></span><figcaption>The gate today: every entry is written into a book by hand.</figcaption></figure>
     </section>
 
     <section class="sec" id="functions">
       <h2>What it does, function by function</h2>
-      <dl class="fn has-photos"><div><dt>M1 Worker gate<small>Handheld</small></dt><dd>The guard sweeps the queue and the screen shows each worker&#x27;s photo, name, company, pass and induction status. Green means the entry is logged; red means stop and call the supervisor. Every entry and exit is time-stamped.</dd><span class="ph"><img src="assets/smartsite/m1-gate.jpg" alt="" loading="lazy"></span></div><div><dt>M2 Vehicle control<small>Handheld</small></dt><dd>The guard scans a tamper-evident windscreen tag and the vehicle is checked against the register. Unknown vehicles raise an alert, and the site finally has a count of vehicles inside.</dd><span class="ph"><img src="assets/smartsite/m2-vehicle.jpg" alt="" loading="lazy"></span></div><div><dt>M3 Toolbox meeting headcount<small>Handheld</small></dt><dd>The supervisor sweeps the crew&#x27;s helmets in seconds. The reads are checked against the crew roster, absentees are listed at once, and attendance is saved per meeting, crew and date.</dd><span class="ph"><img src="assets/smartsite/m3-toolbox.jpg" alt="" loading="lazy"></span></div><div><dt>M4 Store and materials<small>Handheld</small></dt><dd>Select an item and sweep the store to locate its tag, guided by signal strength. Withdrawals scan the worker&#x27;s helmet and then the items, so every withdrawal has a name on it. Stocktakes become a walk with a reader.</dd><span class="ph"><img src="assets/smartsite/m4-store.jpg" alt="" loading="lazy"></span></div><div><dt>M5 Controlled-area access<small>Fixed reader and handheld</small></dt><dd>A reader at the room, zone or hoist lets only trained, authorised workers pass. Refusals are logged, which gives an audit trail that a visual check never leaves.</dd><span></span></div><div><dt>M6 Floor headcount and mustering<small>Fixed reader and handheld</small></dt><dd>Readers at stair cores and hoists keep a live count per floor and zone. In an emergency, handhelds sweep the muster point and the platform lists who is still unaccounted for, with the last checkpoint they passed.</dd><span class="ph"><img src="assets/smartsite/m6-muster.jpg" alt="" loading="lazy"></span></div><div><dt>The platform<small>Register, rules, records</small></dt><dd>One register of workers, vehicles and materials. Rules check each read for a valid pass and the right training. Outputs are a gate screen, dashboards per gate, floor and zone, monthly reports and exports.</dd><span class="ph"><img src="assets/smartsite/control-room.jpg" alt="" loading="lazy"></span></div></dl>
+      <dl class="fn has-photos"><div><dt>M1 Worker gate<small>Handheld</small></dt><dd>The guard sweeps the queue and the screen shows each worker&#x27;s photo, name, company, pass and induction status. Green means the entry is logged; red means stop and call the supervisor. Every entry and exit is time-stamped.</dd><span class="ph"><img decoding="async" src="assets/smartsite/m1-gate.webp" alt="" loading="lazy"></span></div><div><dt>M2 Vehicle control<small>Handheld</small></dt><dd>The guard scans a tamper-evident windscreen tag and the vehicle is checked against the register. Unknown vehicles raise an alert, and the site finally has a count of vehicles inside.</dd><span class="ph"><img decoding="async" src="assets/smartsite/m2-vehicle.webp" alt="" loading="lazy"></span></div><div><dt>M3 Toolbox meeting headcount<small>Handheld</small></dt><dd>The supervisor sweeps the crew&#x27;s helmets in seconds. The reads are checked against the crew roster, absentees are listed at once, and attendance is saved per meeting, crew and date.</dd><span class="ph"><img decoding="async" src="assets/smartsite/m3-toolbox.webp" alt="" loading="lazy"></span></div><div><dt>M4 Store and materials<small>Handheld</small></dt><dd>Select an item and sweep the store to locate its tag, guided by signal strength. Withdrawals scan the worker&#x27;s helmet and then the items, so every withdrawal has a name on it. Stocktakes become a walk with a reader.</dd><span class="ph"><img decoding="async" src="assets/smartsite/m4-store.webp" alt="" loading="lazy"></span></div><div><dt>M5 Controlled-area access<small>Fixed reader and handheld</small></dt><dd>A reader at the room, zone or hoist lets only trained, authorised workers pass. Refusals are logged, which gives an audit trail that a visual check never leaves.</dd><span></span></div><div><dt>M6 Floor headcount and mustering<small>Fixed reader and handheld</small></dt><dd>Readers at stair cores and hoists keep a live count per floor and zone. In an emergency, handhelds sweep the muster point and the platform lists who is still unaccounted for, with the last checkpoint they passed.</dd><span class="ph"><img decoding="async" src="assets/smartsite/m6-muster.webp" alt="" loading="lazy"></span></div><div><dt>The platform<small>Register, rules, records</small></dt><dd>One register of workers, vehicles and materials. Rules check each read for a valid pass and the right training. Outputs are a gate screen, dashboards per gate, floor and zone, monthly reports and exports.</dd><span class="ph"><img decoding="async" src="assets/smartsite/control-room.webp" alt="" loading="lazy"></span></div></dl>
       <div class="prose"><p><strong>Who it is for.</strong> Main contractors and owners running large construction-stage sites, where crews change weekly and the gates have no permanent access control yet.</p></div>
     </section>
 
@@ -120,7 +122,7 @@ document.documentElement.setAttribute('data-theme',t);})();
           <div><b data-k="muster">0</b><span data-k="await">No drill running</span></div>
         </div>
         <div class="dash-main" data-step="0"><svg class="plan aerial" viewBox="0 0 1448 1086" role="img" aria-label="Aerial view of a construction site with RFID reader positions marked: a worker gate on the left hoarding, a vehicle gate at the bottom, a toolbox meeting area, the building with a controlled room and two stair-core readers, a store, and a muster point">
-  <image href="assets/site-aerial.jpg" width="1448" height="1086" preserveAspectRatio="xMidYMid slice"/>
+  <image href="assets/site-aerial.webp" width="1448" height="1086" preserveAspectRatio="xMidYMid slice"/>
   <rect class="scrim" width="1448" height="1086"/>
   <g class="m m1">
     <rect class="pl" x="136" y="546" width="26" height="60" rx="5"/><circle class="ping" cx="149" cy="576" r="64"/>
@@ -160,7 +162,7 @@ document.documentElement.setAttribute('data-theme',t);})();
       <h3 style="margin-top:56px;font-size:clamp(22px, 2.4vw, 28px);font-weight:500;letter-spacing:-.02em">Go deeper: the worker-movement dashboard</h3>
       <div class="prose"><p>This is the sample dashboard from a Smart Site proposal, running on 10,000 synthetic worker records. Filter by subcontractor, work package and floor, open a worker to see their day as a numbered sequence of reads, play a shift back in 30-minute steps, and run a muster drill.</p></div>
       <div class="embed tall">
-        <img class="embed-poster" src="assets/smartsite/control-room.jpg" alt="" loading="lazy">
+        <img decoding="async" class="embed-poster" src="assets/smartsite/control-room.webp" alt="" loading="lazy">
         <div class="embed-cta">
           <button type="button" class="pill solid js-embed" data-src="demo/smart-site-dashboard.html" data-title="Smart Site worker-movement dashboard">Open the dashboard here <svg class="arw" viewBox="0 0 12 10" fill="none" aria-hidden="true"><path d="M0.8 5h10M7.1 1.4 10.9 5l-3.8 3.6" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
           <p>It is a 1.4 MB sample and works best on a desktop screen. All worker records, counts and scan times in it are synthetic. <a href="demo/smart-site-dashboard.html" target="_blank" rel="noopener">Open it in a new tab</a> instead.</p>
@@ -221,8 +223,8 @@ document.documentElement.setAttribute('data-theme',t);})();
 <footer>
   <div class="wrap">
     <a href="index.html" aria-label="LENIX home">
-      <img class="on-dark" src="assets/logo-on-dark.png" alt="LENIX" width="628" height="220">
-      <img class="on-light" src="assets/logo-on-light.png" alt="LENIX" width="655" height="220">
+      <img decoding="async" class="on-dark" src="assets/logo-on-dark.png" alt="LENIX" width="628" height="220">
+      <img decoding="async" class="on-light" src="assets/logo-on-light.png" alt="LENIX" width="655" height="220">
     </a>
     <nav aria-label="Footer">
       <a href="builtsync.html">BuiltSync</a><a href="ezjob.html">EZJOB</a><a href="courseatlas.html">Course Atlas</a><a href="smartsite.html">Smart Site</a>

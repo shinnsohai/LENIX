@@ -61,9 +61,11 @@ def head(title, desc, extra=""):
 %s
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;800&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700;800&family=Red+Hat+Mono:wght@500&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/showcase.css">
+<link rel="stylesheet" href="assets/refine.css">
+<script type="speculationrules">{"prefetch":[{"where":{"href_matches":"/*.html"},"eagerness":"moderate"}]}</script>
 %s</head>
 """ % (e(title), e(desc), THEME_BOOT, extra)
 
@@ -119,7 +121,7 @@ def footer(home=False, scripts=""):
 PRODUCTS = [
     dict(
         slug="builtsync", name="BuiltSync", kind="Workforce OS for project sites", accent="var(--violet)",
-        shot=("shot-bs-att.jpg", 1900, 671, "BuiltSync worker check-in screen beside the admin console attendance summary"),
+        shot=("shot-bs-att.webp", 1900, 671, "BuiltSync worker check-in screen beside the admin console attendance summary"),
         demo=("#demo", "Try the interactive demo"),
         second=("#p2live", "Use the Phase 2 prototype"),
         title="BuiltSync by LENIX: workforce OS for project sites",
@@ -172,7 +174,7 @@ PRODUCTS = [
     ),
     dict(
         slug="ezjob", name="EZJOB", kind="Skilled trades and technical talent matching", accent="var(--cyan)",
-        shot=("shot-ez-jobs.jpg", 1900, 960, "EZJOB job search with filters and live listings"),
+        shot=("shot-ez-jobs.webp", 1900, 960, "EZJOB job search with filters and live listings"),
         demo=("https://lenix-ezjob.vercel.app/", "Open EZJOB"),
         second=None,
         title="EZJOB by LENIX: skilled trades and technical talent matching",
@@ -224,7 +226,7 @@ PRODUCTS = [
     ),
     dict(
         slug="courseatlas", name="Course Atlas", kind="Singapore training course calendar", accent="var(--magenta)",
-        shot=("shot-courseatlas.jpg", 1510, 716, "Course Atlas month calendar with course filters and listings"),
+        shot=("shot-courseatlas.webp", 1510, 716, "Course Atlas month calendar with course filters and listings"),
         demo=("https://course-atlas-sg-shinn.shinnsohai.chatgpt.site/", "Open Course Atlas"),
         second=None,
         title="Course Atlas by LENIX: Singapore training course calendar",
@@ -285,18 +287,18 @@ SHOWCASE = {
     "builtsync": dict(
         chapter="From the first check-in to the last payslip.",
         steps=[
-            ("One system, two faces", "A worker app and an admin console, working from the same record. These are real screens from the Phase 2 prototype, with sample data.", None, "", "shot-bs-home.jpg"),
-            ("Check in on the phone", "The worker signs in from site. The app confirms the location is inside the geofence and starts counting the shift.", "The admin's daily summary updates at once: expected, normal, abnormal, on leave", "", "shot-bs-att.jpg"),
-            ("A payslip the worker confirms", "Payslips are generated from attendance and pay rules. The worker sees net pay, days, overtime and deductions, and confirms or disputes.", "The admin sees which payslips are confirmed, waiting or disputed", "", "shot-bs-pay.jpg"),
-            ("Leave, on a calendar", "The worker applies against their balance and tracks each request. Admins approve from a month view of the whole workforce.", None, "", "shot-bs-leave.jpg"),
-            ("Certificates and skills", "Each worker carries a skill passport. Admins see every certificate with its number, expiry and status: valid, expiring soon or expired.", "Expiring certificates are flagged before they lapse", "", "shot-bs-cert.jpg"),
+            ("One system, two faces", "A worker app and an admin console, working from the same record. These are real screens from the Phase 2 prototype, with sample data.", None, "", "shot-bs-home.webp"),
+            ("Check in on the phone", "The worker signs in from site. The app confirms the location is inside the geofence and starts counting the shift.", "The admin's daily summary updates at once: expected, normal, abnormal, on leave", "", "shot-bs-att.webp"),
+            ("A payslip the worker confirms", "Payslips are generated from attendance and pay rules. The worker sees net pay, days, overtime and deductions, and confirms or disputes.", "The admin sees which payslips are confirmed, waiting or disputed", "", "shot-bs-pay.webp"),
+            ("Leave, on a calendar", "The worker applies against their balance and tracks each request. Admins approve from a month view of the whole workforce.", None, "", "shot-bs-leave.webp"),
+            ("Certificates and skills", "Each worker carries a skill passport. Admins see every certificate with its number, expiry and status: valid, expiring soon or expired.", "Expiring certificates are flagged before they lapse", "", "shot-bs-cert.webp"),
         ]),
     "ezjob": dict(
         chapter="Show the work. Not the CV.",
         steps=[
-            ("Search by trade, pay and country", "Workers filter live roles by role, salary, country and benefits, in a list or a swipe view.", "42 jobs listed on 11 November 2026", "", "shot-ez-jobs.jpg"),
-            ("Every job names its skills", "Each listing shows the employer, the openings left and the trade skills it needs, so the match is on skills and not on keywords.", None, "0.42,0.86,1.7", "shot-ez-jobs.jpg"),
-            ("See who is hiring", "Employers have their own pages with open roles, so a worker can check the company before applying.", "3 companies hiring on 11 November 2026", "", "shot-ez-companies.jpg"),
+            ("Search by trade, pay and country", "Workers filter live roles by role, salary, country and benefits, in a list or a swipe view.", "42 jobs listed on 11 November 2026", "", "shot-ez-jobs.webp"),
+            ("Every job names its skills", "Each listing shows the employer, the openings left and the trade skills it needs, so the match is on skills and not on keywords.", None, "0.42,0.86,1.7", "shot-ez-jobs.webp"),
+            ("See who is hiring", "Employers have their own pages with open roles, so a worker can check the company before applying.", "3 companies hiring on 11 November 2026", "", "shot-ez-companies.webp"),
         ]),
     "courseatlas": dict(
         chapter="Every provider. One calendar.",
@@ -310,13 +312,13 @@ SHOWCASE = {
         chapter="One person. One ID. One tag.",
         plan=True,
         steps=[
-            ("One site, six controls", "Handhelds and fixed readers cover the gate, vehicles, toolbox meetings, the store, controlled rooms and every floor.", None, "", "smartsite/helmet-tag.jpg"),
-            ("Worker gate", "The guard sweeps the queue. Each worker's photo, company, pass and induction status appear on screen. Green: entry logged. Red: stop.", "Read range up to 15 m, as stated by the reader vendor", "", "smartsite/m1-gate.jpg"),
-            ("Vehicle lane", "The guard scans the windscreen tag and the vehicle is checked against the register. Unknown vehicles raise an alert.", "Log book: about 60 s per vehicle. Stated RFID check: 2 s.", "", "smartsite/m2-vehicle.jpg"),
-            ("Toolbox meeting", "The supervisor sweeps the crew's helmets. The roster is checked and the absentee list appears at once.", "One sweep reads the whole crew", "", "smartsite/m3-toolbox.jpg"),
-            ("Store and materials", "Pick an item and sweep the store to find its tag. Withdrawals scan the worker's helmet, then the items.", "Every withdrawal is tied to a named worker", "", "smartsite/m4-store.jpg"),
+            ("One site, six controls", "Handhelds and fixed readers cover the gate, vehicles, toolbox meetings, the store, controlled rooms and every floor.", None, "", "smartsite/helmet-tag.webp"),
+            ("Worker gate", "The guard sweeps the queue. Each worker's photo, company, pass and induction status appear on screen. Green: entry logged. Red: stop.", "Read range up to 15 m, as stated by the reader vendor", "", "smartsite/m1-gate.webp"),
+            ("Vehicle lane", "The guard scans the windscreen tag and the vehicle is checked against the register. Unknown vehicles raise an alert.", "Log book: about 60 s per vehicle. Stated RFID check: 2 s.", "", "smartsite/m2-vehicle.webp"),
+            ("Toolbox meeting", "The supervisor sweeps the crew's helmets. The roster is checked and the absentee list appears at once.", "One sweep reads the whole crew", "", "smartsite/m3-toolbox.webp"),
+            ("Store and materials", "Pick an item and sweep the store to find its tag. Withdrawals scan the worker's helmet, then the items.", "Every withdrawal is tied to a named worker", "", "smartsite/m4-store.webp"),
             ("Controlled rooms", "A reader at the room, zone or hoist lets only trained, authorised workers pass. Refusals are logged for audits.", "Log book: about 30 s per person. Stated RFID check: 2 s.", "", "-"),
-            ("Floors and mustering", "Readers at stair cores and hoists keep a live count per floor. At the assembly point, a handheld sweep lists who is missing.", "Shows the last checkpoint passed, not a live position", "", "smartsite/m6-muster.jpg"),
+            ("Floors and mustering", "Readers at stair cores and hoists keep a live count per floor. At the assembly point, a handheld sweep lists who is missing.", "Shows the last checkpoint passed, not a live position", "", "smartsite/m6-muster.webp"),
         ]),
 }
 
@@ -375,7 +377,7 @@ PRODUCTS.append(dict(
 
 
 def plan(counts=False, uid="a"):
-    """The Smart Site plot plan: an aerial site image (assets/site-aerial.jpg) with reader positions marked up on it.
+    """The Smart Site plot plan: an aerial site image (assets/site-aerial.webp) with reader positions marked up on it.
     Coordinates are in the image's own pixels (1448 x 1086), so a new image needs its markup re-placed."""
     def c(z, x, y):
         return '<text class="cnt" data-z="%s" x="%d" y="%d" text-anchor="middle">0</text>' % (z, x, y) if counts else ""
@@ -385,7 +387,7 @@ def plan(counts=False, uid="a"):
                 % (x, y, x + 27, y + 21, code))
 
     return """<svg class="plan aerial" viewBox="0 0 1448 1086" role="img" aria-label="Aerial view of a construction site with RFID reader positions marked: a worker gate on the left hoarding, a vehicle gate at the bottom, a toolbox meeting area, the building with a controlled room and two stair-core readers, a store, and a muster point">
-  <image href="assets/site-aerial.jpg" width="1448" height="1086" preserveAspectRatio="xMidYMid slice"/>
+  <image href="assets/site-aerial.webp" width="1448" height="1086" preserveAspectRatio="xMidYMid slice"/>
   <rect class="scrim" width="1448" height="1086"/>
   <g class="m m1">
     <rect class="pl" x="136" y="546" width="26" height="60" rx="5"/><circle class="ping" cx="149" cy="576" r="64"/>
@@ -463,7 +465,7 @@ def scene(p):
 """ % (len(sc["steps"]), lis, stage)
 
 
-SHOT_DIMS = {'shot-bs-home.jpg': (1900, 671), 'shot-bs-att.jpg': (1900, 671), 'shot-bs-pay.jpg': (1900, 671), 'shot-bs-leave.jpg': (1900, 671), 'shot-bs-cert.jpg': (1900, 671), 'shot-ez-home.jpg': (1900, 961), 'shot-ez-jobs.jpg': (1900, 960), 'shot-ez-companies.jpg': (1900, 960)}
+SHOT_DIMS = {'shot-bs-home.webp': (1900, 671), 'shot-bs-att.webp': (1900, 671), 'shot-bs-pay.webp': (1900, 671), 'shot-bs-leave.webp': (1900, 671), 'shot-bs-cert.webp': (1900, 671), 'shot-ez-home.webp': (1900, 961), 'shot-ez-jobs.webp': (1900, 960), 'shot-ez-companies.webp': (1900, 960)}
 
 SMARTSITE_EXTRA = """
     <section class="sec" id="demo">
@@ -486,7 +488,7 @@ SMARTSITE_EXTRA = """
       <h3 style="margin-top:56px;font-size:clamp(22px, 2.4vw, 28px);font-weight:500;letter-spacing:-.02em">Go deeper: the worker-movement dashboard</h3>
       <div class="prose"><p>This is the sample dashboard from a Smart Site proposal, running on 10,000 synthetic worker records. Filter by subcontractor, work package and floor, open a worker to see their day as a numbered sequence of reads, play a shift back in 30-minute steps, and run a muster drill.</p></div>
       <div class="embed tall">
-        <img class="embed-poster" src="assets/smartsite/control-room.jpg" alt="" loading="lazy">
+        <img class="embed-poster" src="assets/smartsite/control-room.webp" alt="" loading="lazy">
         <div class="embed-cta">
           <button type="button" class="pill solid js-embed" data-src="demo/smart-site-dashboard.html" data-title="Smart Site worker-movement dashboard">Open the dashboard here """ + ARW + """</button>
           <p>It is a 1.4 MB sample and works best on a desktop screen. All worker records, counts and scan times in it are synthetic. <a href="demo/smart-site-dashboard.html" target="_blank" rel="noopener">Open it in a new tab</a> instead.</p>
@@ -575,7 +577,7 @@ def builtsync_post():
       </div>
       <div class="p2-mods" role="group" aria-label="Guided tour"></div>
       <div class="embed tall p2-frame">
-        <img class="embed-poster" src="assets/shot-bs-home.jpg" alt="" loading="lazy">
+        <img class="embed-poster" src="assets/shot-bs-home.webp" alt="" loading="lazy">
         <div class="embed-cta">
           <button type="button" class="pill solid" data-p2-start>Start the prototype %s</button>
           <p>Data stays in your browser and can be reset from the prototype's own top bar. The guided buttons use the English labels; you can still switch the prototype to Chinese and explore by hand.</p>
@@ -594,15 +596,15 @@ MEDIA = {
     "builtsync": dict(logo=("builtsync/logo.png", "builtsync/logo.png", "")),
     "ezjob": dict(
         logo=("logo-ezjob-light.png", "logo-ezjob-dark.png", " band"),
-        live=("https://lenix-ezjob.vercel.app/", "shot-ez-jobs.jpg", "Use EZJOB here.",
+        live=("https://lenix-ezjob.vercel.app/", "shot-ez-jobs.webp", "Use EZJOB here.",
               "The live job board loads into this page. Search the open roles, open a company, or start a Skill Passport.",
               "Open EZJOB here")),
     "courseatlas": dict(
-        live=("https://course-atlas-sg-shinn.shinnsohai.chatgpt.site/", "shot-courseatlas.jpg", "Use Course Atlas here.",
+        live=("https://course-atlas-sg-shinn.shinnsohai.chatgpt.site/", "shot-courseatlas.webp", "Use Course Atlas here.",
               "The live calendar loads into this page. Filter by course, language and day, then shortlist what fits.",
               "Open Course Atlas here")),
     "smartsite": dict(
-        figure=("smartsite/gate-logbook.jpg", "Workers queue at a site gate while a guard writes each entry in a log book",
+        figure=("smartsite/gate-logbook.webp", "Workers queue at a site gate while a guard writes each entry in a log book",
                 "The gate today: every entry is written into a book by hand."),
         fn_photos={0: "m1-gate", 1: "m2-vehicle", 2: "m3-toolbox", 3: "m4-store", 5: "m6-muster", 6: "control-room"}),
 }
@@ -668,7 +670,7 @@ def product_page(i, p):
     for k, (fa, fb, fc) in enumerate(p["functions"]):
         ph = ""
         if fn_photos is not None:
-            ph = ('<span class="ph"><img src="assets/smartsite/%s.jpg" alt="" loading="lazy"></span>' % fn_photos[k]) if k in fn_photos else "<span></span>"
+            ph = ('<span class="ph"><img src="assets/smartsite/%s.webp" alt="" loading="lazy"></span>' % fn_photos[k]) if k in fn_photos else "<span></span>"
         fns += "<div><dt>%s<small>%s</small></dt><dd>%s</dd>%s</div>" % (e(fa), e(fb), e(fc), ph)
     ths = "".join('<th scope="col">%s</th>' % e(a) for a in p["alts"])
     rows = "".join('<tr><th scope="row">%s</th><td class="us">%s</td>%s</tr>' % (e(r[0]), e(r[1]), "".join("<td>%s</td>" % e(c) for c in r[2:])) for r in p["rows"])
@@ -778,7 +780,7 @@ def client_wall():
         inner = '<img src="assets/%s" alt="%s">' % (logo, e(name)) if logo else e(name)
         cells += "<li>%s</li>" % ('<a href="%s" target="_blank" rel="noopener">%s</a>' % (link, inner) if link else "<span>%s</span>" % inner)
     for _ in range(max(0, CLIENT_SLOTS - len(CLIENTS))):
-        cells += '<li><span class="open">Reserved for a pilot partner</span></li>'
+        cells += '<li><a class="slot" href="#contact"><span>Reserved for a pilot partner</span><span>Claim this spot</span></a></li>'
     return '<ul class="clients">%s</ul>' % cells
 
 
@@ -811,7 +813,7 @@ def home():
     <video class="bg-video is-active" id="bgVideoA" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true" poster="%(poster)s">
       <source src="%(video)s" type="video/mp4">
     </video>
-    <video class="bg-video" id="bgVideoB" muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true" poster="%(poster)s">
+    <video class="bg-video" id="bgVideoB" muted loop playsinline preload="metadata" disablepictureinpicture aria-hidden="true" poster="%(poster)s">
       <source src="%(video)s" type="video/mp4">
     </video>
   </div>
@@ -924,7 +926,7 @@ def home():
 
 def write(name, text):
     with io.open(os.path.join(ROOT, name), "w", encoding="utf-8", newline="\n") as fh:
-        fh.write(text)
+        fh.write(text.replace("<img ", '<img decoding="async" '))
     print("wrote", name, len(text))
 
 

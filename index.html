@@ -12,9 +12,11 @@ document.documentElement.setAttribute('data-theme',t);})();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;800&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700;800&family=Red+Hat+Mono:wght@500&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/showcase.css">
+<link rel="stylesheet" href="assets/refine.css">
+<script type="speculationrules">{"prefetch":[{"where":{"href_matches":"/*.html"},"eagerness":"moderate"}]}</script>
 <script>
 (function(){
   var root = document.documentElement;
@@ -37,8 +39,8 @@ document.documentElement.setAttribute('data-theme',t);})();
 <header class="topbar is-hidden" id="topbar" inert>
   <div class="wrap bar">
     <a class="tb-logo" href="#top" aria-label="LENIX home">
-      <img class="on-dark" src="assets/logo-on-dark.png" alt="LENIX" width="628" height="220">
-      <img class="on-light" src="assets/logo-on-light.png" alt="LENIX" width="655" height="220">
+      <img decoding="async" class="on-dark" src="assets/logo-on-dark.png" alt="LENIX" width="628" height="220">
+      <img decoding="async" class="on-light" src="assets/logo-on-light.png" alt="LENIX" width="655" height="220">
     </a>
     <nav class="tb-links" aria-label="Primary"><a href="builtsync.html">BuiltSync</a><a href="ezjob.html">EZJOB</a><a href="courseatlas.html">Course Atlas</a><a href="smartsite.html">Smart Site</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
     <div class="tb-actions">
@@ -55,13 +57,13 @@ document.documentElement.setAttribute('data-theme',t);})();
     <video class="bg-video is-active" id="bgVideoA" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/82e7eb75-c65f-490a-99b5-f3d1cad54200.webp">
       <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260912_104036_bd6924f6-3c8e-417e-8465-6d03c8c2e9e6.mp4" type="video/mp4">
     </video>
-    <video class="bg-video" id="bgVideoB" muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/82e7eb75-c65f-490a-99b5-f3d1cad54200.webp">
+    <video class="bg-video" id="bgVideoB" muted loop playsinline preload="metadata" disablepictureinpicture aria-hidden="true" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/82e7eb75-c65f-490a-99b5-f3d1cad54200.webp">
       <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260912_104036_bd6924f6-3c8e-417e-8465-6d03c8c2e9e6.mp4" type="video/mp4">
     </video>
   </div>
 
   <header class="nav">
-    <a class="logo" href="#top" aria-label="LENIX home"><img src="assets/logo-on-dark.png" alt="LENIX" width="628" height="220"></a>
+    <a class="logo" href="#top" aria-label="LENIX home"><img decoding="async" src="assets/logo-on-dark.png" alt="LENIX" width="628" height="220"></a>
     <nav class="nav-links" aria-label="Primary"><a href="builtsync.html">BuiltSync</a><a href="ezjob.html">EZJOB</a><a href="courseatlas.html">Course Atlas</a><a href="smartsite.html">Smart Site</a><a href="#services">Services</a><a href="#about">About</a></nav>
     <div class="nav-actions">
       <button class="btn btn-login js-theme" type="button" aria-label="Switch theme"><svg class="i-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.2v1.6M8 13.2v1.6M1.2 8h1.6M13.2 8h1.6M3.2 3.2l1.1 1.1M11.7 11.7l1.1 1.1M3.2 12.8l1.1-1.1M11.7 4.3l1.1-1.1"/></svg><svg class="i-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.6 9.6A6 6 0 0 1 6.4 2.4a6 6 0 1 0 7.2 7.2z"/></svg></button>
@@ -118,7 +120,7 @@ document.documentElement.setAttribute('data-theme',t);})();
           <a class="pill line" href="builtsync.html#demo">Try the interactive demo</a>
         </div>
       </div>
-      <a class="shot wipe" href="builtsync.html" aria-label="BuiltSync: full breakdown"><img src="assets/shot-bs-att.jpg" alt="BuiltSync worker check-in screen beside the admin console attendance summary" width="1900" height="671" loading="lazy"></a>
+      <a class="shot wipe" href="builtsync.html" aria-label="BuiltSync: full breakdown"><img decoding="async" src="assets/shot-bs-att.webp" alt="BuiltSync worker check-in screen beside the admin console attendance summary" width="1900" height="671" loading="lazy"></a>
     </article>
     <article class="prow flip" id="ezjob" style="--c:var(--cyan)">
       <div class="p-copy">
@@ -131,7 +133,7 @@ document.documentElement.setAttribute('data-theme',t);})();
           <a class="pill line" href="https://lenix-ezjob.vercel.app/" target="_blank" rel="noopener">Open EZJOB</a>
         </div>
       </div>
-      <a class="shot wipe" href="ezjob.html" aria-label="EZJOB: full breakdown"><img src="assets/shot-ez-jobs.jpg" alt="EZJOB job search with filters and live listings" width="1900" height="960" loading="lazy"></a>
+      <a class="shot wipe" href="ezjob.html" aria-label="EZJOB: full breakdown"><img decoding="async" src="assets/shot-ez-jobs.webp" alt="EZJOB job search with filters and live listings" width="1900" height="960" loading="lazy"></a>
     </article>
     <article class="prow" id="courseatlas" style="--c:var(--magenta)">
       <div class="p-copy">
@@ -144,7 +146,7 @@ document.documentElement.setAttribute('data-theme',t);})();
           <a class="pill line" href="https://course-atlas-sg-shinn.shinnsohai.chatgpt.site/" target="_blank" rel="noopener">Open Course Atlas</a>
         </div>
       </div>
-      <a class="shot wipe" href="courseatlas.html" aria-label="Course Atlas: full breakdown"><img src="assets/shot-courseatlas.jpg" alt="Course Atlas month calendar with course filters and listings" width="1510" height="716" loading="lazy"></a>
+      <a class="shot wipe" href="courseatlas.html" aria-label="Course Atlas: full breakdown"><img decoding="async" src="assets/shot-courseatlas.webp" alt="Course Atlas month calendar with course filters and listings" width="1510" height="716" loading="lazy"></a>
     </article>
     <article class="prow flip" id="smartsite" style="--c:var(--orange)">
       <div class="p-copy">
@@ -158,7 +160,7 @@ document.documentElement.setAttribute('data-theme',t);})();
         </div>
       </div>
       <a class="shot wipe" href="smartsite.html" aria-label="Smart Site: full breakdown" data-step="0"><svg class="plan aerial" viewBox="0 0 1448 1086" role="img" aria-label="Aerial view of a construction site with RFID reader positions marked: a worker gate on the left hoarding, a vehicle gate at the bottom, a toolbox meeting area, the building with a controlled room and two stair-core readers, a store, and a muster point">
-  <image href="assets/site-aerial.jpg" width="1448" height="1086" preserveAspectRatio="xMidYMid slice"/>
+  <image href="assets/site-aerial.webp" width="1448" height="1086" preserveAspectRatio="xMidYMid slice"/>
   <rect class="scrim" width="1448" height="1086"/>
   <g class="m m1">
     <rect class="pl" x="136" y="546" width="26" height="60" rx="5"/><circle class="ping" cx="149" cy="576" r="64"/>
@@ -225,7 +227,7 @@ document.documentElement.setAttribute('data-theme',t);})();
   <div class="wrap">
     <h2>Reserved for the companies that build what comes next.</h2>
     <p class="lede">LENIX is the technology arm of Clarity Group. We are taking on pilot partners now, and this wall is kept for the companies that run on our products.</p>
-    <ul class="clients"><li><a href="https://www.clarity.com.sg" target="_blank" rel="noopener">Clarity Group</a></li><li><span class="open">Reserved for a pilot partner</span></li><li><span class="open">Reserved for a pilot partner</span></li><li><span class="open">Reserved for a pilot partner</span></li><li><span class="open">Reserved for a pilot partner</span></li><li><span class="open">Reserved for a pilot partner</span></li></ul>
+    <ul class="clients"><li><a href="https://www.clarity.com.sg" target="_blank" rel="noopener">Clarity Group</a></li><li><a class="slot" href="#contact"><span>Reserved for a pilot partner</span><span>Claim this spot</span></a></li><li><a class="slot" href="#contact"><span>Reserved for a pilot partner</span><span>Claim this spot</span></a></li><li><a class="slot" href="#contact"><span>Reserved for a pilot partner</span><span>Claim this spot</span></a></li><li><a class="slot" href="#contact"><span>Reserved for a pilot partner</span><span>Claim this spot</span></a></li><li><a class="slot" href="#contact"><span>Reserved for a pilot partner</span><span>Claim this spot</span></a></li></ul>
     <div class="p-links"><a class="pill solid" href="#contact">Run a pilot with us <svg class="arw" viewBox="0 0 12 10" fill="none" aria-hidden="true"><path d="M0.8 5h10M7.1 1.4 10.9 5l-3.8 3.6" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
   </div>
 </section>
@@ -245,8 +247,8 @@ document.documentElement.setAttribute('data-theme',t);})();
 <footer>
   <div class="wrap">
     <a href="#top" aria-label="LENIX home">
-      <img class="on-dark" src="assets/logo-on-dark.png" alt="LENIX" width="628" height="220">
-      <img class="on-light" src="assets/logo-on-light.png" alt="LENIX" width="655" height="220">
+      <img decoding="async" class="on-dark" src="assets/logo-on-dark.png" alt="LENIX" width="628" height="220">
+      <img decoding="async" class="on-light" src="assets/logo-on-light.png" alt="LENIX" width="655" height="220">
     </a>
     <nav aria-label="Footer">
       <a href="builtsync.html">BuiltSync</a><a href="ezjob.html">EZJOB</a><a href="courseatlas.html">Course Atlas</a><a href="smartsite.html">Smart Site</a>
